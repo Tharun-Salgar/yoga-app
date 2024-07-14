@@ -13,6 +13,29 @@
   }
 }
 
+
+
+.app-container {
+  display: flex;
+  margin: 20px; /* Add some margin to the container */
+}
+
+.button-section {
+  width: 200px; /* Fixed width for the button section */
+  margin-right: 20px; /* Space between buttons and video */
+}
+
+.video-section {
+  flex: 1; /* This will take up the remaining space */
+  display: flex;
+  justify-content: center; /* Center video horizontally */
+  align-items: center; /* Center video vertically */
+  border: 1px solid #ccc; /* Optional: Add a border to the video section */
+  padding: 10px; /* Optional: Add padding */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +59,38 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles.css */
+
+.btn {
+  display: block;           /* Make buttons block elements for equal length */
+  width: 100%;             /* Full width */
+  max-width: 300px;        /* Maximum width for each button */
+  margin: 10px auto;       /* Center align and add vertical space */
+  padding: 15px;           /* Padding for button */
+  background-color: #007bff; /* Blue background */
+  color: white;            /* White text */
+  border: 2px solid transparent; /* Border */
+  border-radius: 5px;     /* Rounded corners */
+  font-size: 16px;         /* Font size */
+  text-align: center;      /* Center text */
+  text-decoration: none;   /* Remove underline */
+  transition: background-color 0.3s, border-color 0.3s; /* Transition effects */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3;      /* Darker border on hover */
+}
+
+.btn-outline-light {
+  background-color: transparent; /* Transparent background for outline */
+  color: #007bff;                /* Blue text for outline */
+  border: 2px solid #007bff;     /* Blue border */
+}
+
+.btn-outline-light:hover {
+  background-color: #007bff; /* Blue background on hover for outline */
+  color: white;               /* White text on hover for outline */
+}
+
